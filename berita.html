@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Berita & Artikel — Lazismu Türkiye</title>
+  <meta name="description" content="Kabar terbaru program dan dampak Lazismu Türkiye." />
+  <link rel="icon" href="https://lazismu.org/images/logo/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header (same as index) -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="container">
+        <div class="contact-info">
+          <span><i class="fas fa-phone"></i> +90 123 456 7890</span>
+          <span><i class="fas fa-envelope"></i> info@lazismuturkiye.org</span>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="main-header">
+      <div class="container">
+        <a href="index.html" class="logo"><img src="https://donasi.lazismu.org/images/logo.svg" alt="Lazismu Logo" loading="lazy" /></a>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html" class="nav-link" data-tr="Anasayfa" data-en="Home" data-ar="الصفحة الرئيسية">Anasayfa</a></li>
+            <li><a href="index.html#programs" class="nav-link" data-tr="Programlar" data-en="Programs" data-ar="البرامج">Programlar</a></li>
+            <li><a href="berita.html" class="nav-link" data-tr="Haberler" data-en="News" data-ar="الأخبار">Haberler</a></li>
+            <li><a href="#footer" class="nav-link" data-tr="İletişim" data-en="Contact" data-ar="اتصل بنا">İletişim</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <div class="language-switcher">
+            <button id="lang-tr" class="active">TR</button>
+            <button id="lang-en">EN</button>
+            <button id="lang-ar">AR</button>
+          </div>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </button>
+          <a href="#" class="donate-button" data-tr="Donasi Sekarang" data-en="Donate Now" data-ar="تبرع الآن">Donasi Sekarang</a>
+          <button class="mobile-nav-toggle" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1 data-tr="Berita & Artikel" data-en="News & Articles" data-ar="الأخبار والمقالات">Berita & Artikel</h1>
+      </div>
+    </div>
+
+    <section class="all-news-section">
+      <div class="container">
+        <div id="all-articles-container" class="news-grid" aria-live="polite" aria-busy="true"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="https://donasi.lazismu.org/images/logo.svg" alt="Lazismu Logo" class="footer-logo" loading="lazy" />
+          <p data-tr="Türkiye'deki toplulukları güçlendirmeye adanmış bir amil zekat kurumu." data-en="An amil zakat institution dedicated to empowering communities in Turkey." data-ar="مؤسسة زكاة تسعى لتمكين المجتمعات في تركيا."></p>
+        </div>
+        <div class="footer-col">
+          <h4 data-tr="Hızlı Linkler" data-en="Quick Links" data-ar="روابط سريعة">Hızlı Linkler</h4>
+          <ul>
+            <li><a href="#" data-tr="Hakkımızda" data-en="About Us" data-ar="من نحن">Hakkımızda</a></li>
+            <li><a href="index.html#programs" data-tr="Programlar" data-en="Programs" data-ar="البرامج">Programlar</a></li>
+            <li><a href="berita.html" data-tr="Haberler" data-en="News" data-ar="الأخبار">Haberler</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-tr="İletişim" data-en="Contact" data-ar="اتصال">İletişim</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Istanbul, Turkey</p>
+          <p><i class="fas fa-phone"></i> +90 123 456 7890</p>
+          <p><i class="fas fa-envelope"></i> info@lazismuturkiye.org</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Lazismu Türkiye. <span data-tr="Tüm Hakları Saklıdır." data-en="All Rights Reserved." data-ar="جميع الحقوق محفوظة.">Tüm Hakları Saklıdır.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
